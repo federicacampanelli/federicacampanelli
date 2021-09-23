@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@import url("style-contacts.css");
+@import url("https://use.typekit.net/qfx8anw.css");
+
+
+/* CSS Document */
+body { 
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+    background-color: black;
+}
+
+/*css menu*/
+a {
+	color: white; 
+	text-decoration: none;
+	transition: color 0.3s;
+}
+a:hover {
+color: #fef480;
+}
+
+#logo {
+	position:fixed;
+	top:30px;
+	margin-left:30px;
+	height:40px;
+	width:77px;
+	border:2px solid white;
+	border-color:white;
+	border-radius:100%;
+	font-family:Gopher, aktiv-grotesk-extended, sans-serif;
+	font-size:25px;
+	font-weight:800;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	z-index:1;
+}
+#logo:hover {
+	border-color: #fef480;
+	transform: rotate(-6deg);
+	transition: transform 0.3s;
+	z-index: 1;
+}
+.menu {
+	font-family: Gopher;
+	font-size: 25px;;
+	font-weight: 800;
+	padding:30px;
+}
+#works {
+	position:fixed;
+	right: 0px;
+	z-index: 1;
+}	
+#works:hover {
+	transform: rotate(6deg);
+	transition: transform 0.3s;	
+	z-index: 1;
+}
+#about {
+	position:fixed;
+	bottom: 0px;
+	z-index: 1;
+}	
+#about:hover {
+	transform: rotate(6deg);
+	transition: transform 0.3s;	
+	z-index: 1;
+}
+#contacts {
+	position:fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+}	
+#contacts:hover {
+	transform: rotate(-6deg);
+	transition: transform 0.3s;	
+	z-index: 1;
+}
+
+/*css landing page*/
+div {
+	display:block;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	padding-top:40px;
+	align: center;
+}
+h1 {
+	color: white;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 100px;
+	line-height: 1;
+	letter-spacing: 0.5px;
+	text-align: left;
+}
+
+
+
+@media (max-width: 1024px){
+	#contacts {
+		margin-bottom:50px;
+		margin-right:-70px;
+		transform: rotate(90deg);
+	}
+	#contacts:hover {
+		transform: rotate(84deg);
+		
+	}
+	#about {
+		margin-bottom:-22px;
+	}
+	#ciao {
+		width:570px;	
+	}
+	p {
+		font-size: 35px;
+		line-height: 1.5;
+		padding-left: 170px;
+		padding-right: 170px;
+	}
+	#face {
+		width:160px;
+		margin-left: -163px;
+		margin-top:-110px;
+}
+	#hand {
+		z-index:1;
+		width:90px;
+		margin-left:-87px;
+		margin-top: -100px;
+		}
+	#window {
+		z-index:2;
+		width:180px;
+		margin-left:-172px;
+		margin-top:-80px;
+	}
+	#chair {
+		width: 200px;
+		margin-left: -87px;
+		margin-top: -53px;
+	}
+	#eyes {
+		width:190px;
+		margin-left: -241px;
+		margin-top: -5px;
+	}
+}
+@media (max-width: 900px){
+	#ciao {
+		padding-top: 100px;
+		width:450px;
+	}
+}
+@media (max-width: 720px){
+	#ciao {
+		padding-top: 90px;
+		width:370px;
+	}
+	p {
+		font-size: 25px;
+		line-height: 1.5;
+		padding-left: 150px;
+		padding-right: 150px;
+}
+	#face {
+		width:140px;
+		margin-left: -130px;
+		margin-top:-100px;
+}
+	#hand {
+		width:75px;
+		margin-left:-70px;
+		margin-top: -86px;
+		}
+	#window {
+		width:150px;
+		margin-left:-135px;
+		margin-top:-70px;
+	}
+	#chair {
+		width: 160px;
+		margin-left: -69px;
+		margin-top: -47px;
+	}
+	#eyes {
+		width:155px;
+		margin-left: -200px;
+		margin-top: -18px;
+	}
+}
+
+
+
+/*css footer*/
+footer {
+	width:100%;
+	height:95px;
+	background-color: #b7b2fa;
+}
+.footer-size {
+	display:block;
+	width:70%;
+	padding-top:35px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.footer-text {
+	font-family: Gopher, sans-serif;
+	padding:0px;
+	letter-spacing:0px;
+	font-size:16px;
+	font-weight:500;
+	color: black;
+	display:inline;
+}
+.back-to-top-link {
+	display:inline-block;
+	font-family: Gopher, sans-serif;
+	font-weight:200;
+	font-size:14px;
+	line-height:1.8em;
+	text-align:center;
+	width:1.5rem;
+	height:1.5rem;
+	border-radius: 50%;
+	border:1px solid black;
+	transition:color 0.3 ease;
+	color:black;
+}
+.back-to-top-wrapper {
+	float:right;
+	width:30px;
+	padding-left:15px;
+	padding-top:0px;
+}
+.back-to-top-link:hover {
+	border: 1px solid #fef480;	
+}
+
+
+/*media queries*/
+@media (max-width: 1024px){
+	#contacts {
+		margin-bottom:50px;
+		margin-right:-70px;
+		transform: rotate(90deg);
+	}
+	#contacts:hover {
+		transform: rotate(84deg);
+	}
+	#about {
+		margin-bottom:-22px;
+	}
+	#made-with {
+		padding-left: 27%;
+	}	
+}
+@media (max-width: 720px) {
+	#made-with {
+		padding-left: 23%;
+	}
+}
+@media (max-width: 450px) {
+	.footer-text {
+		font-size:13px;
+	}
+	.back-to-top-link {
+		font-size:12px;
+		line-height: 2em;
+		border: 0.5px solid black;
+	}
+	#made-with {
+		padding-left: 10%;
+	}
+}

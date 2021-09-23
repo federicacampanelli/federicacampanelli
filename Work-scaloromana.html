@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="magazine and website s. storie di approdi - scalo romana">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, s. storie di approdi, scalo romana, magazine, website">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-scalo.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Project - S. Storie di Approdi</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+			
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});		
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+		
+	<body>
+		<div class="content" align="center">
+			<div class="box-title" align="center">
+				<img class="title" alt="s. storie di approdi - scalo romana" src="img/STORIE DI APPRODI/scalo-titolo.png">
+				<h1 class="title-mobile">S. STORIE DI APPRODI</h1>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>EDITORIAL</i></p>
+				<p class="small-label"><i>BRANDING</i></p>
+				<p class="small-label"><i>ILLUSTRATION</i></p>
+			</div>
+		</div>
+		<div class="box-quote" width="100%" style="background-color:transparent;margin-top:0%;margin-bottom:0%;padding-top:2%;padding-bottom:2%;" align="center">
+			<img class="magazine" alt="scalo-romana-magazine" src="img/STORIE DI APPRODI/scalo-rivista3.png">
+		</div>	
+		<div class="content" align="center">
+			<p>Integrated communication for <a class="link-text"><img id="small-map" alt="scalo romana - small map" src="img/STORIE DI APPRODI/scalo-mappina.svg">Scalo Romana</a>, one of the creative districts in Milan. The district has always been&nbsp;characterized by the coexistence of two diametrically opposed realities: on one hand, large and well-known infrastructures while, on the other, intimate contexts of small ınızıatıves engaged in the development of the district social fabric. This peculiarity has been visually translated in a bimestral magazine and a website in order to reflect this kind of dualism and to communicate the story of a district that grows year after year thanks to the people who live there.</p>
+			<video style="padding-top:6%" width="100%" autoplay loop muted>
+				<source src="img/STORIE DI APPRODI/scalo-dualism.mp4" type="video/mp4">	
+			</video>
+			<img class="img-float" alt="scalo-romana-magazine-blu" style="padding-top:4%;float:left" src="img/STORIE DI APPRODI/scalo-blu1.jpg">
+			<img class="img-float" alt="scalo-romana-magazine-rossa" style="padding-top:4%;float:right" src="img/STORIE DI APPRODI/scalo-rossa1.jpg">
+			<img class="img-float" alt="scalo-romana-magazine-blu" style="padding-top:4%;float:left" src="img/STORIE DI APPRODI/scalo-blu3.jpg">
+			<img class="img-float" alt="scalo-romana-magazine-rossa" style="padding-top:4%;float:right" src="img/STORIE DI APPRODI/scalo-rossa3.jpg">
+			<img width="100%;" style="padding-top:4%" alt="scalo-romana-magazine-blu" src="img/STORIE DI APPRODI/scalo-blu2.jpg">
+			<img width="100%;" style="padding-top:4%" alt="scalo-romana-magazine-rossa" src="img/STORIE DI APPRODI/scalo-rossa2.jpg">
+			<video width="100%" style="padding-top:4%" autoplay loop muted>
+				<source src="img/STORIE DI APPRODI/scalo-rivista-eventi.mp4" type="video/mp4">	
+			</video>
+			<p style="padding-top:4%; padding-bottom:5%;">To guide not only the inhabitants but also visitors and tourists within the soul of the district, a map has been designed in order to let people find the main places that have led the district to develop a creative environment.
+			</p>
+			
+			<img width="100%" style="background-color:#fef3f3;margin-bottom:-1%;padding-bottom:0%;" alt="scalo-romana-mappa-dettaglio" src="img/STORIE DI APPRODI/scalo-mapdetail1.png">
+			<img class="img-float" style="float:left;padding-top:5%;" alt="scalo-romana-mappa-dettaglio" src="img/STORIE DI APPRODI/scalo-mapdetail3.png">
+			<img class="img-float" style="float:right;padding-top:5%" alt="scalo-romana-mappa-dettaglio" src="img/STORIE DI APPRODI/scalo-mapdetail2.png">
+
+			<video width="100%" style="margin-top:5%;" autoplay loop muted>
+				<source src="img/STORIE DI APPRODI/scalo-mappa-gif.mp4" type="video/mp4">	
+			</video>
+			<video width="100%" style="padding-top:5%;" autoplay loop muted>
+				<source src="img/STORIE DI APPRODI/scalo-openpack.mp4" type="video/mp4">	
+			</video>	
+		
+			<p style="padding-top:4%; padding-bottom:5%;">A website has also been designed to keep visitors updated on latest news and events inside the district. Lastly, the user can navigate and read all the stories about the creative places of Scalo Romana through an interactive and user friendly map.
+			</p>	
+		</div>	
+		
+		<div class="box-quote" align="center">
+			<video width="80%" style="padding-bottom:5%;" align="center" autoplay loop>
+				<source src="img/STORIE DI APPRODI/scalo-website.mp4" type="video/mp4">	
+			</video>	
+			<video width="90%" align="center" autoplay loop>
+				<source src="img/STORIE DI APPRODI/scalo-website2.mp4" type="video/mp4">	
+			</video>
+		</div>
+		
+		<div class="content" align="center">
+			<p class="selectedworks" align="center">PROJECT DETAILS ↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Year: 2019<br>Designed with: Giovanni Covre, Chiara Fabretti, Mattia Lombardini, Alessio Zavaglia <br>Magazine format: 17x24cm
+				<br>(printed with offset)<br>Font: <a class="link-details" href="https://www.goodtypefoundry.com/adieu">Adieu</a>, <a class="link-details" href="http://prospectus.losttype.com">Prospectus Pro</a> <br>Project made during the <i>Communication for the territory</i> course at <i>Politecnico di Milano</i><br>Project supervisors: prof. Gıovannı Baule, Danıela Calabı, Marco Quaggıotto, Vıncenzo D’Abbraccıo, Clorında Galasso, Mıchele Stımola</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-dillo.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-cadmi.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="poster campaign for cadmi">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, cadmi campaign, poster">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-cadmi.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Project - CADMI campaign</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+			
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<div class="content" align="center">
+			<div class="box-title" align="center">
+				<img class="title" alt="cadmi campaign" src="img/CADMI/cadmi-titolo.png">
+				<h1 class="title-mobile">CADMI CAMPAIGN</h1>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>COPYWRITING</i></p>
+				<p class="small-label"><i>POSTER DESIGN</i></p>
+			</div>
+		
+			<p style="padding-bottom:5%">An awareness campaign against violence against women created for the Italian Association <a class="link-text" href="https://www.cadmi.org">CADMI</a> (Casa di Accoglienza delle Donne Maltrattate)</p>
+			<img class="img-float" style="float:left;" alt="cadmi-poster" src="img/CADMI/cadmi-1.png">
+			<img class="img-float" style="float:right;" alt="cadmi-poster" src="img/CADMI/cadmi-2.png">
+			<img class="img-float" style="float:left;" alt="cadmi-poster" src="img/CADMI/cadmi-3.png">
+			<img class="img-float" style="float:right;" alt="cadmi-poster" src="img/CADMI/cadmi-5.png">
+			<img width="100%" style="padding-top:4%;" alt="cadmi-poster" src="img/CADMI/cadmi-4.png">
+	
+			<p style="padding-top:4%; padding-bottom:5%;">The project is an alternative response to traditional manifestos against gender-based violence, where women are usually represented as victims of violence, hurt or mistreated. This kind of posters, however, aren't able to generate so much awareness around the problem both for male and female audience, but rather, they encourage people to usually look away and move on. Hence, the idea of structuring a campaign that visually focuses more on verbal violence instead of physical one. In fact, according to CADMI, verbal harassment is often one of the first warning signs regarding gender-based violence.
+			</p>
+			<img width="100%" alt="cadmi-mockup" src="img/CADMI/cadmi-mockup.jpg">
+		</div>
+		
+		<div class="content" style="margin-top:4%;" align="center">
+			<div class="text-left">
+				<p id="text-left">The copy is inspired on the <a class="link-text" href="https://www.youtube.com/watch?v=4WjhLSkXqTk">monologue</a> written by Stefano Bartezzaghi and interpreted by Paola Cortellesi during the 62° edition of the David di Donatello (2018). Thanks to CADMI, the campaign was exhibited at BASE Milano together with other graphic proposals during a three days conference that talked about violence and gender stereotypes.
+				</p>
+			</div>
+			<div class="img-right">
+				<img width="100%" alt="cadmi-stories" src="img/CADMI/cadmi-stories-e-post.png">
+			</div>
+		</div>
+		
+		<div class="box-quote" align="center">
+			<img class="quote" alt="bartezzaghi-quote" src="img/CADMI/cadmi-frase.png">
+			<img class="quote-mobile" alt="bartezzaghi-quote" src="img/CADMI/cadmi-frase-mobile.png">
+		</div>
+		
+		<div class="content" align="center">
+			<p class="selectedworks" align="center">PROJECT DETAILS ↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Client: CADMI<br>Year: 2019<br>Designed with: Valentina Verderio, Alessandra Nuzzo, Simona Fall<br>Posters format: 70x100cm
+				<br>(printed with offset)<br>Font: <a class="link-details" href="https://www.futurefonts.xyz/rudiger/arnold">Arnold</a>,<a class="link-details" href="https://pangrampangram.com/products/gatwick?variant=32840639709238">Gatwick</a><br>Project made during the <i>Art Direction</i> course at <i>Politecnico di Milano</i><br>Project supervisors: prof. Luigi Marcello Ciccognani, tutor Giacomo Regallo, supervision of Paolo Iabichino</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-scaloromana.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-lime.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

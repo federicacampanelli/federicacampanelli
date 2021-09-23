@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="Contacts">
+  		<meta name="keywords" content="portfolio, contacts, email, social, instagram, behance, linkedin,">
+ 		<meta name="author" content="Federica Campanelli">
+		
+		<title>Contact me</title>
+	
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/contacts.css" rel="stylesheet" type="text/css">
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+        		$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    		}); 
+		});
+			
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>	
+	
+	<body>
+			<div class="content">
+		   		<h2>Let's get in touch! (Coffee is ready)</h2>
+				<img class="gif" alt="coffee gif" src="img/CONTACTS/contacts-coffee.gif">
+				<p class="contacts">
+					Email: <a class="mail" href= "mailto:federica.campanelli@outlook.com">federica.campanelli@outlook.com</a><br>
+					Phone: <a class="mail" href="tel:+393347676258">+39 3347676258</a>
+				</p>
+				<p class="contacts-mobile">
+					Email: <a class="mail" href= "mailto:federica.campanelli@outlook.com">federica.campanelli<br>@outlook.com</a><br>
+					Phone: <a class="mail" href="tel:+393347676258">+39 3347676258</a>
+				</p>
+					
+				<h3>Or, if you prefer, just take a sneak peek at my social profiles:</h3>
+				<div class="card">
+					<a href="https://www.instagram.com/f.cmplli/">
+						<img alt="Federica Campanelli Instagram" width="45%" src="img/CONTACTS/contacts-ig.png">
+						<img alt="Federica Campanelli Instagram" width="45%" class="img-top" src="img/CONTACTS/contacts-ig-hover.png">
+					</a>
+				</div>
+				<div class="card">
+					<a href="https://www.linkedin.com/in/federica-campanelli-0b908613a/">
+						<img alt="Federica Campanelli LinkedIn" width="45%" src="img/CONTACTS/contacts-linkedin.png">
+						<img alt="Federica Campanelli LinkedIn" width="45%" class="img-top" src="img/CONTACTS/contacts-linkedin-hover.png">
+					</a>
+				</div>
+				<div class="card">
+					<a href="https://www.behance.net/federicaca79d2">
+						<img alt="Federica Campanelli Behance" width="45%" src="img/CONTACTS/contacts-behance.png">
+						<img alt="Federica Campanelli Behance" width="45%" class="img-top" src="img/CONTACTS/contacts-behance-hover.png">
+					</a>
+				</div>
+			</div>
+			
+			
+
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+
+</html>

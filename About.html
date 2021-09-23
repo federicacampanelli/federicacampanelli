@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="Curriculum vitae">
+  		<meta name="keywords" content="portfolio, about, cv, curriculum vitae,">
+ 		<meta name="author" content="Federica Campanelli">
+		
+		<title>Federica Campanelli About</title>
+	
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/about.css" rel="stylesheet" type="text/css">
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+			
+		//img hover
+		$(document).mousemove(function(e) {
+    		$('.img').offset({
+        	left: e.pageX -170,
+        	top: e.pageY -150,
+    		});
+		});
+		
+		
+		//back to top movement
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+        		$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    		}); 
+		});	
+			
+			
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>	
+	
+	<body>
+		<content>
+			<div class="content">
+				<h2>About</h2>
+				<p>Hi there!
+					<a class="link" href="">
+						This is me (and the face that you'll eventually see at work if you hire me).
+						<video style="transform:rotate(3deg);" class="img" autoplay loop muted>
+							<source src="img/ABOUT/about-videome2.mp4" type="video/mp4">	
+						</video>
+					</a>
+					I'm Federica, a multidisciplinary visual designer passionate about every aspect of design but with a fondness for digital and UX/UI design. 
+				</p>
+				<h3>Study path</h3>
+				<p>I live in a peaceful town called 
+					<a class="link" href="">Fano (Marche region, Italy)
+						<video style="transform:rotate(-3deg);" class="img" autoplay loop muted>
+							<source src="img/ABOUT/about-videofano.mp4" type="video/mp4">	
+						</video>
+					</a> but the desire to learn and try new things eventually led me first in San Marino, where I got my bachelor's degree 
+					in Product and Multimedia Design (2017) at 
+					<a class="link" href="https://design.unirsm.sm">UNIRSM
+						<img style="transform:rotate(-3deg);" alt="San Marino Unirsm" class="img" src="img/ABOUT/about-unirsm2.jpeg">
+					</a>
+					and then in Milan, where I took the master's degree in Communication Design (2021) at 
+					<a class="link" href="https://www.polimi.it/it">Politecnico di Milano.
+						<img style="transform:rotate(-3deg);" alt="Polimi bovisa design" class="img" src="img/ABOUT/about-polimi.jpg">
+					</a>
+				</p>
+				<h3>Work experiences</h3>
+				<p>During these years I've had the chance to work with great studios like 
+					<a class="link" href="https://pitis.eu">Pitis e Associati 
+						<img style="transform:rotate(3deg);" alt="Pitis e Associati" class="img" src="img/ABOUT/about-pitis.jpg">
+					</a>
+					(Milan, 2016) and 
+					<a class="link" href="https://www.quartopianocomunicazione.it">Quartopianocomunicazione
+						<img style="transform:rotate(-3deg);" alt="Quartopiano comunicazione" class="img" src="img/ABOUT/about-qpc.jpg">
+					</a>
+					(Pesaro, 2018).
+				</p>
+				<h3>Free time</h3>
+				<p>
+					In my free time you can find me 
+					<a class="link" href="">listening to music
+						<video style="transform:rotate(3deg);" class="img" autoplay loop muted>
+							<source src="img/ABOUT/about-music.mp4" type="video/mp4">	
+						</video>
+					</a>
+					or going to concerts of 
+					<a class="link" href="http://www.seltonmusic.com">musicians that usually nobody knows.
+						<video style="transform:rotate(-3deg);" class="img" autoplay loop muted>
+							<source src="img/ABOUT/about-videoselton.mp4" type="video/mp4">	
+						</video>
+					</a>	
+					If you'd like to get to know more about me and my work, <a class="link" href="Contacts.html">contact me!</a>
+					<br>
+					<br>
+					Thank you for stopping by.
+					<br>
+					<br>
+					— Federica C.
+				</p>
+			</div>
+			<div class="box-image">
+				<img class="photo" alt="Federica Campanelli foto" src="img/ABOUT/about-me2.jpg">
+			</div>
+        </content>
+		
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="Dillo - sex education service">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, dillo, sex education, app, service, ux, ui">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-dillo.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Dillo</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+			
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});	
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<div class="content" align="center">
+			<div class="box-title" align="center">
+				<video class="title" width="90%" autoplay loop muted>
+					<source src="img/DILLO/dillo-videotitolo.mp4" type="video/mp4">	
+				</video>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>UX/UI</i></p>
+				<p class="small-label"><i>BRANDING</i></p>
+				<p class="small-label"><i>APP</i></p>
+				<p class="small-label"><i>WEBSITE</i></p>
+			</div>
+			<p>Dillo is a new inclusive sex education service that helps pre-teens becoming familiar and comfortable with all aspects of their sexuality.</p>
+			<video width="100%" style="padding-top:6%;" autoplay loop muted>
+				<source src="img/DILLO/dillo-app.mp4" type="video/mp4">	
+			</video>
+			<video class="img-float" style="padding-top:4%; padding-bottom:2%; float:left;" autoplay loop muted>
+				<source src="img/DILLO/dillo-video3.mp4" type="video/mp4">	
+			</video>
+			<video class="img-float" style="padding-top:4%;float:right;" autoplay loop muted>
+				<source src="img/DILLO/dillo-video4.mp4" type="video/mp4">	
+			</video>
+		</div>
+		
+		<div class="content" align="center">		
+			<p style="margin-top:5%;">The service proposes a new way of doing sex education at school, through an interactive device inside the classroom and through a personal app for the kid that can be used outside the scolastic environment.
+			</p>
+			<img width="100%" alt="dillo-app-details" src="img/DILLO/dillo-app2.png">
+			<img width="100%" alt="dillo-app-details" src="img/DILLO/dillo-app3.png">
+			<p>These devices transform student doubts and requests into data, which are sifted by an expert who generates tailor-made lessons to let children learn autonomously but also safely.
+			</p>
+		</div>	
+		
+		<div class="box-quote" style="margin-top:0%; padding-top:0%; background-color:transparent;" align="center">
+			<video width="100%" autoplay loop muted>
+				<source src="img/DILLO/dillo-sito1.mp4" type="video/mp4">	
+			</video>
+			<video style="margin-top:-5%;margin-bottom:-5%;" width="81.5%" autoplay loop muted>
+				<source src="img/DILLO/dillo-sito3.mp4" type="video/mp4">	
+			</video>
+		</div>
+		
+		<div class="content" align="center">	
+			<p>Techniques such as desktop searches, intercepts, online questionnaires and interviews were used during the research phase, then, to develop the project concept and the service system, some UX methods have been used.
+			</p>
+		</div>	
+		
+		<div class="box-quote" style="margin-top:5%;" align="center">
+			<img class="box-personas" alt="dillo-personas" src="img/DILLO/dillo-personas.png">
+			<img class="box-personas" style="padding-top:9%;" alt="dillo-service-blueprint" src="img/DILLO/dillo-blueprint.png">
+			<img class="box-personas" style="padding-top:6%;" alt="dillo-visual" src="img/DILLO/dillo-visual.png">
+		</div>
+		
+		<div class="box-quote" style="background-color: transparent;" align="center">
+			<img width="100%" style="margin-top:-15%; margin-bottom:-12%;" alt="dillo-carosello" src="img/DILLO/dillo-carosello.gif">
+		</div>
+		
+		<div class="content" style="margin-bottom:0%;padding-bottom:0%;" align="center">	
+			<p class="selectedworks" align="center">PROJECT DETAILS ↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Year: 2019<br>Designed with: Anna Cravero, Francesca Granzotto, Mattia Lombardini, Daniele Mapelli, Elena Stefani.<br>Font: <a class="link-details" href="https://fonts.google.com/specimen/Modak">Modak</a>, <a class="link-details" href="https://www.colophon-foundry.org/typefaces/apercu/">Apercu</a><br>Project made during the <i>Interaction design</i> course at <i>Politecnico di Milano.</i><br>Project supervisors: prof. Marco Brambilla, Fabio Sergio.</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-slowtour.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-scaloromana.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

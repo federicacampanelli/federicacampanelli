@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="passaggi festival 2021">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, passaggi festival, fano, visual identity">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-passaggi.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Passaggi Festival 2021</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<div class="content" align="center">
+			<div class="box-title" align="center">
+				<img class="title" alt="Passaggi festival title" src="img/PASSAGGI/passaggi-titolo.png">
+				<h1 class="title-mobile">PASSAGGI FESTIVAL</h1>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>POSTER DESIGN</i></p>
+			</div>
+			<p style="padding-top:2%;">Visual identity for <a class="link-text" href="https://www.passaggifestival.it">Passaggi Festival</a> 2021. Passaggi is a non-fiction festival held every year in the city of Fano (PU). The theme of 2021's edition was "Infinity and Provisional".</p>
+			<img class="img-desktop" alt="passaggi manifesto 2021" width="100%;" src="img/PASSAGGI/passaggi-manifesto4.png">
+			<img class="img-mobile" alt="passaggi manifesto 2021" width="100%;" src="img/PASSAGGI/passaggi-manifesto-mobile.jpg">
+			<p style="padding-top:4%;padding-bottom:4%;">The ambivalent title has been visually translated into a paper tightrope walker, poised on a rope, which symbolizes the indeterminacy and the provisionality of the post-covid period. The butterfly wings, instead, represent a reference to Dante Alighieri for the 700th anniversary of his death, and they symbolize the infinite desire of freedom from this provisional balance in which we live all together after the pandemic situation.
+			</p>
+		</div>	
+		<div class="content" align="center">
+			<img class="img-float" alt="passaggi mockup" style="float:left" src="img/PASSAGGI/passaggi-mockup2.png">
+			<img class="img-float" alt="passaggi mockup" style="float:right" src="img/PASSAGGI/passaggi-mockup3.png">
+		</div>
+		
+		<div class="content" align="center">
+			<h1>SHOTS FROM THE FESTIVAL</h1>
+			<img width="100%" alt="passaggi festival 2021" src="img/PASSAGGI/passaggi-festival1.png">
+			<img width="100%" style="padding-top:6%;" alt="passaggi festival 2021" src="img/PASSAGGI/passaggi-festival2.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:left;" src="img/PASSAGGI/passaggi-festival3.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:right;" src="img/PASSAGGI/passaggi-festival4.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:left;" src="img/PASSAGGI/passaggi-festival6.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:right;" src="img/PASSAGGI/passaggi-festival7.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:left;" src="img/PASSAGGI/passaggi-festival8.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:right;" src="img/PASSAGGI/passaggi-festival9.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:left;" src="img/PASSAGGI/passaggi-festival10.png">
+			<img class="img-float" alt="passaggi festival 2021" style="float:right;" src="img/PASSAGGI/passaggi-festival11.png">
+			<img width="100%" style="padding-top:4%;" alt="passaggi festival 2021" src="img/PASSAGGI/passaggi-festival12.png">
+			<h1 style="padding-bottom:2%;">REJECTED PROPOSALS</h1>
+			<img class="proposte" alt="passaggi festival 2021" style="float:left; padding-right:2%;" src="img/PASSAGGI/passaggi-rejected1.webp">
+			<img class="proposte" alt="passaggi festival 2021" style="float:left;" src="img/PASSAGGI/passaggi-rejected2.webp">
+			<img class="proposte" alt="passaggi festival 2021" style="float:right;" src="img/PASSAGGI/passaggi-rejected3.webp">	
+		</div>
+		
+		<div class="content" align="center">
+			<p class="selectedworks" align="center">PROJECT DETAILS↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Client: Passaggi Festival<br>Year: 2021<br>Posters format: 70x100cm
+				<br>(printed with offset)<br>Font: <a class="link-details" href="https://fonts.google.com/specimen/Cormorant+Garamond">Cormorant Garamond</a> (title), <a class="link-details" href="https://www.cufonfonts.com/font/sheenline-script">Sheenline</a> (text on rope).
+				</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-bo55a.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-slowtour.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

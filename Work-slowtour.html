@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="Slow Tour">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, slow tour, tourism, app, service, ux, ui">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-slowtour.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Slow Tour</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+		
+			
+		//back to top movement
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<div class="content" align="center">	
+			<div class="box-title" align="center">
+				<video class="title" autoplay loop muted>
+					<source src="img/SLOW TOUR/slowtour-titolo.mp4" type="video/mp4">	
+				</video>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>UX/UI</i></p>
+				<p class="small-label"><i>BRANDING</i></p>
+				<p class="small-label"><i>APP</i></p>
+				<p class="small-label"><i>ILLUSTRATION</i></p>
+			</div>
+			<p>MASTER THESIS 2021 → Slow Tour is a multi-user geo-blog guide that invites travelers to discover the territory at a slow pace, stimulating their active participation through contents sharing and promoting the practice of walking as a fundamental activity to immerse themselves in the land. The project is a reflection on the role of design in the creation of new tools for the recovery of tourism sector in the post-pandemic phase.</p>
+			<video class="video-app" width="100%" autoplay loop muted>
+				<source src="img/SLOW TOUR/slowtour-videoapp.mp4" type="video/mp4">	
+			</video>
+			<p>Slow Tour is a format created with the intention of enhancing territories usually outside the mass tourist circuits through the practice of slow tourism, the networking of sustainable itineraries and the participatory story of the territory by turists and locals.
+			</p>
+			<h1 style="padding-top:6%;padding-bottom:0%;">App functions</h1> 
+			<img width="100%" alt="slow tour app functions" src="img/SLOW TOUR/slowtour-appfunctions.png">
+		</div>
+			
+		<div class="box-quote" align="center">
+			<img class="video-box" alt="slow tour splashscreen app" src="img/SLOW TOUR/slowtour-app1.png">
+		</div>
+		
+		<div class="content" align="center">		
+			<h1 style="padding-top:5%;padding-bottom:5%;">Map switch: guide/blog</h1> 
+			<video width="100%" autoplay loop muted>
+				<source src="img/SLOW TOUR/slowtour-mapdetail.mp4" type="video/mp4">	
+			</video>
+			<p style="padding-top:3%;">The map, as a guide offers to users all the information regarding the slow path such as the interest (natural, cultural, gastronomic and artistic) or the kilometers, difficulties and stages along the way, as a widespread blog instead, the map allows users to geolocate curiosities, testimonials and tourist advice experienced firsthand on the territory.
+			</p>
+		</div>
+		
+		<div class="box-quote" style="margin-top:5%;" align="center">
+			<video class="video-box" controls>
+				<source src="img/SLOW TOUR/slowtour-app2.mp4" type="video/mp4">	
+			</video>
+			<video class="video-box" style="padding-top:5%;" controls>
+				<source src="img/SLOW TOUR/slowtour-app3.mp4" type="video/mp4">	
+			</video>
+		</div>
+		
+		<div class="content" align="center">		
+			<h1 style="padding-top:5%;padding-bottom:5%;">Design Method</h1>
+			<img width="100%" alt="slow tour design method" src="img/SLOW TOUR/slowtour-method.png">
+			<h1 style="padding-top:3%;padding-bottom:5%;">Territory analysis:<br>province of Pesaro and Urbino (Marche region)</h1>
+			<p style="padding-bottom:5%;">The province of Pesaro and Urbino has been chosen as case study for the project development because both morphologically and culturally it's predisposed to the practice of slow tourism, indeed, it has always been an economic, cultural and artistic crossing point and today it offers a vast network of paths which cross a changing landscape, rich in traditions and small widespread cultural identities.
+			</p>
+			<video class="img-float" style="padding-bottom:5%;float:left" autoplay loop muted>
+				<source src="img/SLOW TOUR/slowtour-provincia1.mp4" type="video/mp4">	
+			</video>
+			<video class="img-float" style="float:right" autoplay loop muted>
+				<source src="img/SLOW TOUR/slowtour-provincia2.mp4" type="video/mp4">	
+			</video>
+		</div>
+
+		<div class="content" align="center">		
+			<h1 style="padding-top:2%;">Territory mapping</h1>
+			<img class="img-float" style="padding-top:5%; float:left;" alt="slowtour mappa percorsi" src="img/SLOW TOUR/slowtour-mappa1.png">
+			<img class="img-float" style="padding-top:5%; float:right;" alt="slowtour mappa strutture ricettive" src="img/SLOW TOUR/slowtour-mappa2.png">
+			<img width="100%" style="padding-top:5%;" alt="slowtour mappa punti di interesse" src="img/SLOW TOUR/slowtour-mappa3.png">
+			<img width="100%" style="padding-top:4%;" alt="slowtour mappa illustrata" src="img/SLOW TOUR/slowtour-mappa4.png">		
+
+			<p class="selectedworks" align="center">PROJECT DETAILS ↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Year: 2021<br>Font: <a class="link-details" href="https://pangrampangram.com/products/gosha-sans?variant=32840645279798">Gosha Sans</a>, <a class="link-details" href="https://www.fonts.com/font/linotype/neue-helvetica">Helvetica Neue</a><br><i>Master Thesis</i> at <i>Politecnico di Milano</i>, Design faculty - Master's degree in communication design<br>The research project is part of the design for territorial communication<br>Project supervisors: prof. Giovanni Baule.</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-passaggi.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-dillo.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

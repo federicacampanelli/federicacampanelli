@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="Lime fest">
+  		<meta name="keywords" content="portfolio, projects, works, graphic, design, lime, festival, brochur, five senses">
+  		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/style-lime.css" rel="stylesheet" type="text/css">
+		
+		
+		<title>Lime fest</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+		
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    			}); 
+		});
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});	
+		</script>
+	</head>
+
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<div class="content" align="center">
+			<div class="box-title" align="center">
+				<video class="title" width="100%" autoplay loop muted>
+					<source src="img/LIME/lime-title.mp4" type="video/mp4">	
+				</video>
+			</div>
+			<div class="tags" align="center">
+				<p class="small-label"><i>BRANDING</i></p>
+				<p class="small-label"><i>EDITORIAL</i></p>
+			</div>
+		
+			<p style="padding-bottom:8%;">The agency Aboca always had difficulties to communicate and relate with a young target. What could bring young people closer to values like health and nature care? Here it comes LIME, a new unconventional and multi-sensorial brand that through a festival and a bi-monthly folding brochure, gives the chance to rediscover values such as bodycare, well-being and sustainable life. The festival itself and all the visual communication of the brand are linked to the five senses and the theme of sensoriality.</p>
+			<img style="padding-bottom:8%;" width="100%" alt="lime-five-brochures" src="img/LIME/lime-brochures.png">
+			<img width="100%" alt="lime-brochure-front-back" src="img/LIME/lime-brochures2.png">
+		</div>
+		
+		<div class="content" align="center">
+			<div class="text-left">
+				<p id="text-left">Five brochures, one for each sense (sight, hearing, taste, smell, touch) in which people can find issues concerning physical and psychological health. Articles are positioned on the front of the brochure while posters on the back.
+				</p>
+			</div>
+			<div class="img-right">
+				<img width="150%" style="margin-left:-15%; margin-top:-6%" alt="lime-brochure-fold" src="img/LIME/lime-folded.gif">
+			</div>
+		</div>
+		<div class="content" align="center">
+			<img width="100%" alt="lime-brochure-mockup" src="img/LIME/lime-folded.png">
+			
+			<p style="padding-top:8%; padding-bottom:8%;">All the informations about the project, the events and the cities in which the festival is held can be found inside the website.</p>
+			<img width="100%" style="margin-top:2%;margin-bottom:14%" alt="lime-website" src="img/LIME/lime-website1.png">
+		</div>
+		
+		<div class="box-quote" align="center">
+			<video width="70%" style="border-radius:15px; margin-bottom:4%;" autoplay loop muted>
+				<source src="img/LIME/lime-website1.mp4" type="video/mp4">	
+			</video>
+			<video width="70%" style="border-radius:15px; margin-bottom:4%;" autoplay loop muted>
+				<source src="img/LIME/lime-website2.mp4" type="video/mp4">	
+			</video>
+			<video width="70%" style="border-radius:15px;" autoplay loop muted>
+				<source src="img/LIME/lime-website3.mp4" type="video/mp4">	
+			</video>
+		</div>
+		
+		<div class="content" align="center">
+			<img width="90%" style="padding-top:8%;" alt="lime-social" src="img/LIME/lime-social.png">
+			<img width="90%" style="padding-top:8%" alt="lime-social" src="img/LIME/lime-stickers.png">		
+		
+			<p class="selectedworks" align="center">PROJECT DETAILS ↓</p>
+			<div class="project-detail">
+				<p class="text-colum-detail">Client: Aboca<br>Year: 2016<br>Designed with: Veronica Cecchini and Edoardo Jorge Beltrammi<br>Brochure Format: open 70x50cm, closed 25x17,5cm (printed with offset)<br>Font: <a class="link-details" href="https://type.today/en/Graphik">Graphik</a>, <a class="link-details" href="https://velvetyne.fr/fonts/sporting-grotesque/">Sporting Grotesque</a><br>Project made during the <i>Communication design</i> course at <i>UNIRSM Design</i><br>Project supervisors: prof. Lucia Roscini, Andrea Medri.</p>
+			</div>
+			<a class="prev-next" id="prev" href="Work-cadmi.html"><i style="padding-right:10px;">←PREV</i></a>
+			<a class="prev-next" id="next" href="Work-kinetictypo.html"><i>NEXT→</i></a>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left; margin-top:5px;" class="footer-text">&copy; FC</p>
+				<p class="footer-text">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

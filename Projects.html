@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="description" content="works page">
+  		<meta name="keywords" content="portfolio, projects, graphic design, design">
+ 		<meta name="author" content="Federica Campanelli">
+		
+		<link rel="stylesheet" href="https://use.typekit.net/qfx8anw.css">
+		<link href="css/styleworks.css" rel="stylesheet" type="text/css">
+		
+		<title>Graphic Works - Federica Campanelli</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script>
+		
+		//img hover	
+		$(document).mousemove(function(e) {
+    		$('.img').offset({
+        	left: e.pageX -170,
+        	top: e.pageY -150,
+    		});
+		});
+		
+			
+		//back to top movement	
+		$(document).ready(function(){ 
+    		$('.back-to-top-link').click(function(){ 
+        		$("html, body").animate({ scrollTop: 0 }, 600); 
+        		return false; 
+    		}); 
+		});
+			
+			
+		//javascript menu mobile
+		function toggleMenu() {
+			$('#menu').slideToggle(300);
+			$('.bg-cover').toggleClass('reveal');
+			$('.hamburger-shell').toggleClass('menu-open');
+			var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
+			$('.hamburger-shell').attr('aria-expanded', !expanded);
+		}
+		$(document).ready(function(){
+			$('.hamburger-shell').click(toggleMenu)
+			$('.bg-cover').click(toggleMenu)
+		});
+		</script>
+	</head>
+
+	<!---sezione menu mobile--->
+	<header>
+		<div class="menu-mobile">
+			<a class="logo" href="Index.html">FC</a>
+			<div class="bg-cover"></div>
+			<button class="hamburger-shell" aria-expanded="false">
+				<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+				<div class="menu-name">MENU</div>
+			</button>
+			<nav align="center" id="menu">
+				<ul>
+					<li><a href="Projects.html">Works</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		
+		<!---sezione menu--->
+		<nav class="menu-desktop">
+			<!---logo--->
+			<a class="logo" href="Index.html">FC</a>
+			<!---menu--->
+            <a class="menu" id="works" href="Projects.html">WORKS</a>
+            <a class="menu" id="about" href="About.html">ABOUT</a>  
+            <a class="menu" id="contacts" href="Contacts.html">CONTACTS</a>
+       	</nav>
+	</header>
+	
+	<body>
+		<h2>Works</h2>
+		
+		<div class="projectslist">
+			
+			<a class="link" href="Work-slowtour.html">
+				<div class="projectdetail">
+					<h4>Slow Tour</h4>
+					<div class="tags">
+						<p class="small-label">UX/UI</p>
+						<p class="small-label">BRANDING</p>
+						<p class="small-label">APP</p>
+						<p class="small-label">ILLUSTRATION</p>
+					</div>
+				</div>
+				<video style="border-radius:15px;background-color:black;width:190px;" class="img" autoplay loop muted>
+					<source src="img/SLOW TOUR/slowtour-video-intro.mp4" type="video/mp4">	
+				</video>
+			</a>
+			
+			<a class="link" href="Work-dillo.html">
+				<div class="projectdetail">
+					<h4>Dillo</h4>
+					<div class="tags">
+						<p class="small-label">UX/UI</p>
+						<p class="small-label">BRANDING</p>
+						<p class="small-label">APP/WEBSITE</p>
+					</div>
+				</div>
+				<video style="border-radius:15px;background-color:white;width:210px;" class="img" autoplay loop muted>
+					<source src="img/DILLO/dillo-video-intro.mp4" type="video/mp4">	
+				</video>
+			</a>
+			
+			<a class="link" href="Work-scaloromana.html">
+				<div class="projectdetail-resize" >
+					<h4>S. Storie di Approdi</h4>
+					<div class="tags">
+						<p class="small-label">EDITORIAL</p>
+						<p class="small-label">BRANDING</p>
+						<p class="small-label">ILLUSTRATION</p>
+					</div>
+				</div>
+				<img style="width:600px" class="img" alt="s. storie di approdi - scalo romana" src="img/STORIE DI APPRODI/scalo-rivista3.png">
+			</a>
+			
+			<a class="link" href="Work-cadmi.html">
+				<div class="projectdetail-resize">
+					<h4>CADMI Campaign</h4>
+					<div class="tags">
+						<p class="small-label">COPYWRITING</p>
+						<p class="small-label">POSTER DESIGN</p>
+					</div>
+				</div>
+				<img style="width:380px" class="img" alt="cadmi-campaign" src="img/CADMI/cadmi-1.png">
+			</a>
+			
+			<a class="link" href="Work-lime.html">
+				<div class="projectdetail">
+					<h4>Lime Fest</h4>
+					<div class="tags">
+						<p class="small-label">BRANDING</p>
+						<p class="small-label">EDITORIAL</p>
+					</div>
+				</div>
+				<img style="width:400px" class="img" alt="lime-stickers" src="img/LIME/lime-stickers.png">
+			</a>
+			
+			<a class="link" href="Work-kinetictypo.html">
+				<div class="projectdetail-resize">
+					<h4>Kinetic Typography</h4>
+					<div class="tags">
+						<p class="small-label">MOTION GRAPHIC</p>
+					</div>
+				</div>
+				<video style="width:500px;" class="img" autoplay loop muted>
+					<source src="img/TYPO/typo-videointro.mp4" type="video/mp4">	
+				</video>
+			</a>
+			
+			<a class="link" href="Work-bo55a.html">
+				<div class="projectdetail">
+					<h4>Bo55a</h4>
+					<div class="tags">
+						<p class="small-label">MOTION GRAPHIC</p>
+						<p class="small-label">ILLUSTRATION</p>
+					</div>
+				</div>
+				<video style="width:400px;" class="img" autoplay loop muted>
+					<source src="img/BO55A/bo55a-videointro.mp4" type="video/mp4">	
+				</video>
+			</a>
+			
+			<a class="link" href="Work-passaggi.html">
+				<div class="projectdetail-resize">
+					<h4>Passaggi Festival 2021</h4>
+					<div class="tags">
+						<p class="small-label">POSTER DESIGN</p>
+					</div>
+				</div>
+				<img style="width:360px" class="img" alt="LIME" src="img/PASSAGGI/passaggi-mockup2.png">
+			</a>
+			
+			<div id="baseline" class="projectdetail"></div>
+		</div>
+		
+		<footer>
+			<div align="center" class="footer-size">
+				<p style="float:left;margin-top:0%;" class="footer-text">&copy; FC</p>
+				<p class="footer-text" style="padding-left:3.7%">MADE WITH &#10084;&#65039; IN 2021</p>
+				<div style="float:right;" class="back-to-top-wrapper">
+					<a class="back-to-top-link" aria-label="Scroll to Top" href="#top">↑</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>
