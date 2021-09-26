@@ -75,8 +75,9 @@ body {
 	position:fixed;
 	color:#f5efe9;
 	display:none;
-	top:150px;
-	margin-left:-38px;
+	top:17%;
+	bottom:16%;
+	margin-left:-13.5%;
 	text-decoration: none;
 	font-family:Gopher, sans-serif;
 	font-weight:600;
@@ -450,6 +451,9 @@ footer {
 	}
 	
 	/*content mobile css*/
+	.box-title {
+		margin-top:6%;
+	}
 	.content {
 		width:80%;
 }
@@ -457,7 +461,8 @@ footer {
 		font-size: 11px;
 		padding:7px;
 		margin:1px;
-		margin-bottom:8%;
+		margin-top:10%;
+		margin-bottom:4%;
 }
 	h1 {
 		font-size: 40px;

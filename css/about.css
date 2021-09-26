@@ -67,8 +67,9 @@ body {
 	position:fixed;
 	color:white;
 	display:none;
-	top:150px;
-	margin-left:-38px;
+	top:17%;
+	bottom:16%;
+	margin-left:-13.5%;
 	text-decoration: none;
 	font-family:Gopher, sans-serif;
 	font-weight:600;
@@ -270,10 +271,13 @@ p {
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
-.link:hover {
+.link:hover, .link:active {
 	color:#b7b2fa;
 }
 .link:hover .img {
+	opacity:1;
+}
+.link:active .img {
 	opacity:1;
 }
 
@@ -389,20 +393,29 @@ footer {
 	h3 {
 		font-size: 26px;
 	}
+	a {
+		overflow:hidden;
+	}
 	p {
 		font-size:22px;
 		font-weight:300;
 		line-height:1.8em;
 	}
+	.link .img {
+	opacity: 0;
+	}
 	.img {
-		border-radius:10px;
-		width:250px;
+		border-radius:5%;
+		width:94%;
+		position: relative;
+		margin-left:3%;
+		margin-right:3%;
 }
 	#img-master {
 		width:200px;
 	}
 
-/*ending picture*/
+	/*ending picture*/
 	.box-image {
 	width:25%;
 	padding:50px;
@@ -424,4 +437,30 @@ footer {
 		margin-top:-3px;
 		width:1.4rem;
 		height:1.4rem;}
+	
+	/*css hover mobile*/
+	#videome {
+		margin-top:8%;
+	}
+	#fano {
+		margin-top:10%;
+	}
+	#unirsm {
+		margin-top:8%;
+	}
+	#polimi {
+		margin-top:10%;
+	}
+	#pitis {
+		margin-top:10%;
+	}
+	#qpc {
+		margin-top:10%;
+	}
+	#music {
+		margin-top:10%;
+	}
+	#selton {
+		margin-top:10%;
+	}
 }

@@ -17,14 +17,24 @@
 		<script>
 			
 		//img hover
+		if ( $(window).width() => 600 ) {
+			
 		$(document).mousemove(function(e) {
     		$('.img').offset({
         	left: e.pageX -170,
         	top: e.pageY -150,
     		});
 		});
+		}else{$(document).mousemove(function(e) {
+    		$('.').offset({
+        	left: e.pageX -170,
+        	top: e.pageY -150,
+    		});
+		});
+		}
+		</script>	
 		
-		
+		<script>
 		//back to top movement
 		$(document).ready(function(){ 
     		$('.back-to-top-link').click(function(){ 
@@ -89,7 +99,7 @@
 				<p>Hi there!
 					<a class="link" href="">
 						This is me (and the face that you'll eventually see at work if you hire me).
-						<video style="transform:rotate(3deg);" class="img" autoplay loop muted>
+						<video style="transform:rotate(3deg);" class="img" id="videome" autoplay loop muted>
 							<source src="img/ABOUT/about-videome2.mp4" type="video/mp4">	
 						</video>
 					</a>
@@ -98,27 +108,27 @@
 				<h3>Study path</h3>
 				<p>I live in a peaceful town called 
 					<a class="link" href="">Fano (Marche region, Italy)
-						<video style="transform:rotate(-3deg);" class="img" autoplay loop muted>
+						<video style="transform:rotate(-3deg);" class="img" id="fano" autoplay loop muted>
 							<source src="img/ABOUT/about-videofano.mp4" type="video/mp4">	
 						</video>
 					</a> but the desire to learn and try new things eventually led me first in San Marino, where I got my bachelor's degree 
 					in Product and Multimedia Design (2017) at 
 					<a class="link" href="https://design.unirsm.sm">UNIRSM
-						<img style="transform:rotate(-3deg);" alt="San Marino Unirsm" class="img" src="img/ABOUT/about-unirsm2.webp">
+						<img style="transform:rotate(3deg);" alt="San Marino Unirsm" class="img" id="unirsm" src="img/ABOUT/about-unirsm2.webp">
 					</a>
 					and then in Milan, where I took the master's degree in Communication Design (2021) at 
 					<a class="link" href="https://www.polimi.it/it">Politecnico di Milano.
-						<img style="transform:rotate(-3deg);" alt="Polimi bovisa design" class="img" src="img/ABOUT/about-polimi.webp">
+						<img style="transform:rotate(-3deg);" alt="Polimi bovisa design" class="img" id="polimi" src="img/ABOUT/about-polimi.webp">
 					</a>
 				</p>
 				<h3>Work experiences</h3>
 				<p>During these years I've had the chance to work with great studios like 
 					<a class="link" href="https://pitis.eu">Pitis e Associati 
-						<img style="transform:rotate(3deg);" alt="Pitis e Associati" class="img" src="img/ABOUT/about-pitis.webp">
+						<img style="transform:rotate(3deg);" alt="Pitis e Associati" class="img" id="pitis" src="img/ABOUT/about-pitis.webp">
 					</a>
 					(Milan, 2016) and 
-					<a class="link" href="https://www.quartopianocomunicazione.it">Quartopianocomunicazione
-						<img style="transform:rotate(-3deg);" alt="Quartopiano comunicazione" class="img" src="img/ABOUT/about-qpc.webp">
+					<a class="link" href="https://www.quartopianocomunicazione.it">Quartopiano comunicazione
+						<img style="transform:rotate(-3deg);" alt="Quartopiano comunicazione" class="img" id="qpc"  src="img/ABOUT/about-qpc.webp">
 					</a>
 					(Pesaro, 2018).
 				</p>
@@ -126,13 +136,13 @@
 				<p>
 					In my free time you can find me 
 					<a class="link" href="">listening to music
-						<video style="transform:rotate(3deg);" class="img" autoplay loop muted>
+						<video style="transform:rotate(3deg);" class="img" id="music" autoplay loop muted>
 							<source src="img/ABOUT/about-music.mp4" type="video/mp4">	
 						</video>
 					</a>
 					or going to concerts of 
 					<a class="link" href="http://www.seltonmusic.com">musicians that usually nobody knows.
-						<video style="transform:rotate(-3deg);" class="img" autoplay loop muted>
+						<video style="transform:rotate(-3deg);" class="img" id="selton" autoplay loop muted>
 							<source src="img/ABOUT/about-videoselton.mp4" type="video/mp4">	
 						</video>
 					</a>	

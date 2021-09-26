@@ -66,8 +66,9 @@ body {
 	position:fixed;
 	color:white;
 	display:none;
-	top:150px;
-	margin-left:-38px;
+	top:17%;
+	bottom:16%;
+	margin-left:-13.5%;
 	text-decoration: none;
 	font-family:Gopher, sans-serif;
 	font-weight:600;
@@ -429,5 +430,24 @@ footer {
 		margin-top:-3px;
 		width:1.4rem;
 		height:1.4rem;}
+	
+	/*hover mobile adjustment*/
+	
+	.img {
+		display:none;
+	}
+	.link h4 {
+		color:white;
+	}
+	.link .small-label {
+		color:white;
+		border: 1px solid white;
+	}
+	.projectdetail, .projectdetail-resize {
+		border-top: 1px solid white;
+	}
+	#baseline {
+	height:30px;
+}
 }
 
