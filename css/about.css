@@ -400,10 +400,10 @@ footer {
 		font-size:22px;
 		font-weight:300;
 		line-height:1.8em;
+		margin:0%;
+		padding:0%;
 	}
-	.link .img {
-	opacity: 0;
-	}
+	
 	.img {
 		border-radius:5%;
 		width:94%;
@@ -439,6 +439,22 @@ footer {
 		height:1.4rem;}
 	
 	/*css hover mobile*/
+	.link {
+		pointer-events:none;
+	}
+	.nolink {
+		margin:0%;
+		padding:0%;
+}
+	.nolink .img {
+		opacity:0;
+	}
+	.nolink:hover .img {
+		opacity:1;
+	}
+	.nolink:active .img {
+		opacity:1;
+	}
 	#videome {
 		margin-top:8%;
 	}
